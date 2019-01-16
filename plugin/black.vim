@@ -13,11 +13,6 @@
 "  1.1:
 "    - restore cursor/window position after formatting
 
-if v:version < 700 || !has('python3')
-    echo "This script requires vim7.0+ with Python 3.6 support."
-    finish
-endif
-
 if exists("g:load_black")
    finish
 endif
